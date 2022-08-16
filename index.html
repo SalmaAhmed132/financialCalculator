@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator Widget</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row w-50 m-auto mt-5 ">
+        
+        <div>
+            <h1 class="text-center mb-5 fw-bold calc">calculate your rewards</h1>
+
+            <div class="labels">
+            <div class="d-flex pb-4">
+                <label class="col-3" for="bills">vendor/bills</label>
+                <input id="bills" class="form-control text-center w-50 inp" placeholder="Enter a number" type="number">
+            </div>
+           
+                <div class="d-flex pb-4">
+                    <label class="col-3" for="mediaSpend">media/ad spend</label>
+                    <input id="mediaSpends" class="form-control text-center w-50 inp"  placeholder="Enter a number" type="number">
+                </div>
+                <div class="d-flex pb-4" >
+                    <label class="col-3" for="corpSpend">corp.spend</label>
+                    <input id="corpSpend" class="form-control text-center w-50 inp" placeholder="Enter a number" type="number">
+                </div>
+                <div class="d-flex pb-5">
+                    <label class="col-3" for="teamProject">team project</label>
+                    <input id="teamProject" class="form-control text-center w-50 inp" placeholder="Enter a number" type="number">
+                </div>
+                
+            </div>
+            <h2 class="my-4 text-center compare">compare your rewards</h2>
+            <div class="text-center d-flex justify-content-around w-75 m-auto">
+            <button id="btn-brex" class="btn btn-outline-secondary px-5 fst-italic">Brex</button>
+            <button id="btn-stripe" class="btn btn-outline-secondary px-5 fst-italic">Stripe</button>
+            <button id="btn-amex" class="btn btn-outline-secondary px-5 fst-italic">Amex</button>
+
+            </div>
+        </div>  
+    </div>
+    <table id="table" class="table w-75 m-auto mt-5 d-none">
+        <tbody>
+            <tr>
+                <td class="col-3" scope="col">
+                    <label id="businessCardName" class="fw-bolder" for="BusinessCard">amex business card</label>
+                </td>
+                <td class="col-7" scope="col">
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </td>
+                <td scope="col">
+                    <h3 id="businessCardNumber"></h3>
+                </td>
+              </tr>
+          <tr>
+            <td class="col-3">
+                <label class="fw-bolder" for="unlimitedRewarda">unlimited rewards</label></td>
+            <td class="col-7">
+                <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </td>
+            <td>
+                <h3 id="unlimitedNumber"></h3>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-3">
+                <label class="fw-bolder" for="liftTimeRewards">liftTime rewards</label>
+            </td>
+            <td class="col-7">
+                <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            <td>
+                <h3 id="liftTimeNumber"></h3></td>
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>
+      <div class="w-75 d-flex mt-4 p-5 m-auto  ">
+        <div class="col-4 box p-4 ">
+            <h6>unlimited rewards:</h6>
+            <h5 >LIFETIME REWARDS:</h5>
+        </div>
+        <div class="col-7 ps-2 p-4">
+            <input type="number" value="0" id="unlimitedRewardsInp" class="form-control w-100 mb-1 text-center text-light">
+            <input type="number" value="0" id="liftTimeRewardsInp" class="form-control w-100 text-center text-light">
+        </div>
+    </div>
+      </div>
+    </div>
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

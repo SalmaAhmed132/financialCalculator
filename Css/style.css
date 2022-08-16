@@ -1,0 +1,47 @@
+body
+{
+    text-transform: capitalize;
+}
+
+input 
+{
+    color: #d9e2ef;
+}
+td
+{
+border: none ; 
+}
+.btn
+{
+border:3px solid #d9e2ef;
+box-shadow: 3px #d9e2ef;
+border-radius: 10px;
+}
+.prprogress-bar
+{
+    padding-top:50px;
+    padding-bottom:50px;
+
+}
+#unlimitedRewardsInp , #liftTimeRewardsInp
+{
+    background-color: #047fd7;
+}
+
+.box
+{
+    border: 2px solid #b1b4b8;
+    border-radius: 5px;
+    text-align: right;
+}
+.box input
+{
+    color: white;
+}
+.box h6{
+    color: #66686c;
+}
+.calc , .compare
+{
+    color: #1434A4;
+}
